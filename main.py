@@ -29,7 +29,7 @@ for title in titles:
 def write_top_100_movies():
     with open("top_100_movies.txt", mode="w", encoding='ISO-8859-1') as top_100_movies_file:
         for _ in range(len(movies_titles_list)):
-            top_100_movies_file.write(f"{_ + 1}) {movies_titles_list[_]}\n")
+            top_100_movies_file.write(f"[{_ + 1}] {movies_titles_list[_]}\n")
 
 
 write_top_100_movies()

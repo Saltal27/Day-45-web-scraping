@@ -25,6 +25,7 @@ for title in titles:
     movies_titles_list.insert(0, un_numbered_title)
 
 
+# writing the top 100 movies to a file function
 def write_top_100_movies():
     with open("top_100_movies.txt", mode="w", encoding='ISO-8859-1') as top_100_movies_file:
         for _ in range(len(movies_titles_list)):
